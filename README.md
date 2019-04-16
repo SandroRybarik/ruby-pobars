@@ -38,5 +38,13 @@ Pobars.circular(percent, label:"progress:", length:50, symbol:"█", remaining_s
 
 Pobars.regular(percent, label:"progress:", length:50, symbol:"█", remaining_symbol:".")
 
+
+(1..100).each do |p|
+  Pobars.regular(p)
+  sleep(0.1)
+end
+# -> one line progressbar
+
+# You should put puts "" after end of processing
 ```
 
